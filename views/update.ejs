@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewProd</title>
+</head>
+<body>
+<button> <a href="/fruits">Back</a></button>
+
+    <h1>You are upddating  product <%=resoult[0].title%></h1>
+
+    <form action="/update/<%=resoult[0].id%>" method="post">
+        <div>
+            <label for="">title</label>
+            <input type="text" name="title" value="<%=resoult[0].title%>">
+        </div>
+        <div>
+            <label for="">body</label>
+            <input type="text" name="body" value="<%=resoult[0].body%>">
+        </div>
+        <div>
+            <label for="">$ price</label>
+            <input type="text" name="price" value="<%=resoult[0].price%>">
+        </div>
+        <div>
+            <label for="">catagory</label>
+            <input type="text" name="catagory" value="<%=resoult[0].cat_id%>">
+        </div>
+
+        <button> submit</button>
+    </form>
+
+</body>
+</html>

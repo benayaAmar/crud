@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+</head>
+<body>
+    <h1>My favorite  Car is:  </h1>
+    <% reoult.forEach((item) => { %>
+        <h3>Car is : <%= item.title%></h3>
+        <h3>this product is:  <%= item.body%></h3>
+        <h3>price is:  $<%= item.price%></h3>
+        <a href="/update/<%=item.id%>">🖉</a>
+        <a href="/delete/<%=item.id%>">🗑</a>
+        <%})%>
+
+      <button><a href="/add">Add new product</a> </button>
+
+</body>
+</html>
